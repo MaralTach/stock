@@ -5,6 +5,11 @@
 const express = require('express')
 const app = express()
 
+const cors = require('cors')
+app.use(cors({
+    origin: "https://stockapp-phi.vercel.app"
+}))
+
 /* ------------------------------------------------------- */
 // Required Modules:
 
